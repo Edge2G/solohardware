@@ -1,0 +1,62 @@
+.navbar-logo {
+    padding: 0 10px 0 10px;
+}
+
+.navbar-elements {
+    justify-content: space-between;
+}
+
+.nav-login {
+    float: right;
+}
+
+.navbar {
+    background-color: rgb(135, 134, 162);
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    color: white !important;
+}
+
+.nav-item a:hover {
+    color: rgb(0, 0, 106) !important;
+}
+
+body {
+    margin: auto;
+    background-color: rgb(2, 37, 80) !important;
+}
+
+.item-card {
+    align-items: right;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin: 2rem;
+    background-color: rgb(51, 0, 0);
+    color: rgb(199, 199, 199);
+    border-radius: 10px;
+}
+
+.card-container {
+    padding: 10px;
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+}
+
+.card-group {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}

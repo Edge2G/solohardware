@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const cpuSchema = mongoose.Schema(
+const cpuSchema = new mongoose.Schema(
     {
         name: {
             type: String,
@@ -28,4 +28,6 @@ const cpuSchema = mongoose.Schema(
     }
 );
 
-export const Cpu = mongoose.model('Cpu', cpuSchema);
+const Cpu = mongoose.model('Cpu', cpuSchema);
+
+export default Cpu;

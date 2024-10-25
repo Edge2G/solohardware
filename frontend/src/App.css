@@ -40,6 +40,21 @@ body {
     border-radius: 10px;
 }
 
+.itemName {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.itemPrice {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.itemDetails {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
 .card-container {
     padding: 10px;
 }

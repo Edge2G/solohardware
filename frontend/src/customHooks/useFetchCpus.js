@@ -1,16 +1,10 @@
 import { useState, useEffect } from "react";
 
-export function useFetchCpus(url) {
-    const [cpus, setCpus] = useState([]);
+export const useFetchCpus = async (url) => {
+    const result = await fetch(URL);
 
-    useEffect(() => {
-        fetch(url)
-            .then((res) => res.json())
-            .then((data) => {
-                setCpus(data);
-                console.log(cpus.data);
-            });
-    }, []);
-
-    return { cpus };
-}
+    result.json().then(json => {
+        console.log(json);
+        return {json};
+    });
+};

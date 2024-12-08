@@ -7,6 +7,7 @@ import useFetchCpus from '../customHooks/useFetchCpus.js';
 
 import Navbar from "../components/Navbar";
 import ItemCard from "../components/ItemCard";
+import SideFilters from "../components/SideFilters.js";
 
 export default function CpuPage() {
     
@@ -28,10 +29,13 @@ export default function CpuPage() {
     return (
         <>
             <Navbar />
-            <div className="card-group">
-                {cpuData?.map((data, index) => (
-                    <ItemCard key={index} {...data}></ItemCard>
-                ))};
+            <div className="page-body">
+                <SideFilters />
+                <div className="card-group">
+                    {cpuData?.map((data, index) => (
+                        <ItemCard key={index} {...data}></ItemCard>
+                    ))};
+                </div>    
             </div>
         </>
     );
